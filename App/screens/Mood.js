@@ -7,14 +7,14 @@ import {
   TouchableOpacity,
 } from "react-native";
 import WavyHeader from "../components/WavyHeader";
-import CircleSlider from "react-native-circle-slider";
+import CircleSlider from "../components/CirclularSlider/Slider";
 
 const Mood1 = ({ navigation }) => {
   return (
     <View style={styles.background}>
-      <WavyHeader style={styles.svgCurve} />
+      <WavyHeader style={styles.svgCurve} / >
       <View style={styles.bodyView}>
-        <CircleSlider value={90} />
+        <CircleSlider />
         <TouchableOpacity
           style={styles.NextButtonStyle}
           activeOpacity={0.5}
